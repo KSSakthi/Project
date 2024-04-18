@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Diet Chart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f5e6; /* Light green background */
+        }
+
+        header {
+            background-color: #4caf50; /* Green header background */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #4caf50; /* Green header text color */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: auto; /* Center the table horizontally */
+            margin-right: auto; /* Center the table horizontally */
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        th {
+            background-color: #4caf50; /* Green table header background */
+            color: #fff; /* White table header text color */
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Define different background colors for each day */
+        tr[data-day="Monday"] {
+            background-color: #FFD700; /* Yellow for Monday */
+        }
+
+        tr[data-day="Tuesday"] {
+            background-color: #00FFFF; /* Cyan for Tuesday */
+        }
+
+        tr[data-day="Wednesday"] {
+            background-color: #FF69B4; /* Pink for Wednesday */
+        }
+
+        tr[data-day="Thursday"] {
+            background-color: #800080; /* Purple for Thursday */
+        }
+
+        tr[data-day="Friday"] {
+            background-color: #FF4500; /* Orange for Friday */
+        }
+
+        tr[data-day="Saturday"] {
+            background-color: #008000; /* Green for Saturday */
+        }
+
+        tr[data-day="Sunday"] {
+            background-color: #FF0000; /* Red for Sunday */
+        }
+
+        /* Hover effect */
+        tr:hover {
+            background-color: #e0e0e0; /* Light gray on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diabetes Diet Chart</h1>
+    </header>
+    <div class="container">
+        <h2>Sample Diet Chart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Meal</th>
+                    <th>Food Item</th>
+                    <th>Portion Size</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Monday -->
+                <tr data-day="Monday">
+                    <td rowspan="5">Monday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Greek yogurt</td>
+                    <td>6 oz</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled chicken breast</td>
+                    <td>4 oz</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Carrot sticks</td>
+                    <td>1 cup</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Salmon fillet</td>
+                    <td>6 oz</td>
+                    <td>220</td>
+                </tr>
+                <!-- Tuesday -->
+                   
+                <tr data-day="Tuesday">
+                    <td rowspan="5">Tuesday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Low-fat yogurt</td>
+                    <td>6 oz</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled turkey sandwich</td>
+                    <td>1 sandwich</td>
+                    <td>350</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Mixed nuts</td>
+                    <td>1 oz</td>
+                    <td>160</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Baked chicken breast</td>
+                    <td>6 oz</td>
+                    <td>250</td>
+                </tr>
+
+                <!-- Add content for Tuesday's meals -->
+               <!-- Wednesday -->
+                <tr data-day="Wednesday">
+                    <td rowspan="5">Wednesday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Fruit salad</td>
+                    <td>1 serving</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Spinach and quinoa salad</td>
+                    <td>1 serving</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Yogurt with berries</td>
+                    <td>6 oz</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Grilled salmon</td>
+                    <td>6 oz</td>
+                    <td>320</td>
+                </tr>
+
+                <!-- Add content for Wednesday's meals -->
+                <!-- Thursday -->
+                <!-- Thursday -->
+                <tr data-day="Thursday">
+                    <td rowspan="5">Thursday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Low-fat yogurt</td>
+                    <td>6 oz</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled chicken salad</td>
+                    <td>1 serving</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Veggies with hummus</td>
+                    <td>1 cup</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Quinoa and vegetable stir-fry</td>
+                    <td>1 serving</td>
+                    <td>350</td>
+                </tr>
+
+                <!-- Add content for Thursday's meals -->
+                <!-- Friday -->
+                <tr data-day="Friday">
+                    <td rowspan="5">Friday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Fruit smoothie</td>
+                    <td>1 serving</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled vegetable wrap</td>
+                    <td>1 serving</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Greek yogurt with honey</td>
+                    <td>6 oz</td>
+                    <td>130</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Grilled shrimp with quinoa</td>
+                    <td>1 serving</td>
+                    <td>300</td>
+                </tr>
+
+                <!-- Saturday -->
+                <tr data-day="Saturday">
+                    <td rowspan="5">Saturday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Fruit salad</td>
+                    <td>1 serving</td>
+                    <td>90</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled chicken and vegetable skewers</td>
+                    <td>1 serving</td>
+                    <td>280</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Raw almonds</td>
+                    <td>1 oz</td>
+                    <td>160</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Salmon with quinoa and steamed broccoli</td>
+                    <td>1 serving</td>
+                    <td>350</td>
+                </tr>
+
+                <!-- Add content for Saturday's meals -->
+                <!-- Sunday -->
+                <tr data-day="Sunday">
+                    <td rowspan="5">Sunday</td>
+                    <td>7:00 AM</td>
+                    <td>Breakfast</td>
+                    <td>Whole-grain cereal</td>
+                    <td>1 cup</td>
+                    <td>150</td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Snack</td>
+                    <td>Low-fat yogurt with berries</td>
+                    <td>6 oz</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>12:30 PM</td>
+                    <td>Lunch</td>
+                    <td>Grilled vegetable and quinoa bowl</td>
+                    <td>1 serving</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Snack</td>
+                    <td>Carrot and cucumber sticks with hummus</td>
+                    <td>1 cup</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Dinner</td>
+                    <td>Baked cod with asparagus and brown rice</td>
+                    <td>1 serving</td>
+                    <td>320</td>
+                </tr>
+
+                <!-- Add content for Sunday's meals -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
